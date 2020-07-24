@@ -23,7 +23,7 @@ function checkEmail(input) {
     if (!re.test(input.value.trim())) {
         email.classList.add('placeholderred');
         showError(input, 'Looks like this is not an email')
-        email.placeholder = "email@example.com"
+        email.placeholder = "name@host.tld"
 
     } else {
         showSuccess(input)
