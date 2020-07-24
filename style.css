@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  --green: hsl(154, 59%, 51%);
+  --red: hsl(0, 100%, 74%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+:-ms-input-placeholder {
+  font-weight: bold;
+}
+
+::placeholder {
+  font-weight: bold;
+}
+
+body {
+  align-items: center;
+  background-color: var(--red);
+  background-image: url("/images/bg-intro-desktop.png");
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  margin: 0 7%;
+  min-height: 100vh;
+  padding: 0;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 15%;
+}
+
+.intro h1 {
+  font-size: 7vw;
+  margin-top: 30%;
+}
+
+.intro p {
+  font-size: 4.3vw;
+  font-weight: lighter;
+  margin-bottom: 20%;
+}
+
+.offer {
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+  padding: 2%;
+}
+
+.offer h4 {
+  font-size: 4vw;
+  margin: 4% 20%;
+}
+
+.offer span {
+  font-weight: lighter;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20%;
+  margin-top: 10%;
+  padding: 5%;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-control input {
+  border: 1px solid var(--grayish-blue);
+  border-radius: 0.3rem;
+  display: block;
+  font-size: 5vw;
+  margin-bottom: 7%;
+  padding: 5%;
+  width: 100%;
+}
+
+.form-control input:focus {
+  border-color: #777;
+  outline: 0;
+}
+
+.form-control.error input {
+  border: 2px solid var(--red);
+}
+
+.error-icon {
+  left: 80%;
+  position: absolute;
+  top: 25%;
+}
+
+input.placeholderred::-webkit-input-placeholder {
+  color: var(--red);
+}
+
+.form-control small {
+  bottom: -25%;
+  color: var(--red);
+  font-size: 2.5vw;
+  font-style: italic;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-button {
+  background-color: var(--green);
+  border: none;
+  border-bottom: 0.3rem solid hsl(154, 70%, 41%);
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 3.7vw;
+  letter-spacing: 0.1rem;
+  padding: 7% 5%;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.form-button:hover {
+  background-color: hsl(154, 53%, 70%);
+}
+
+.form-button:active {
+  transform: translateY(4px);
+}
+
+.form p {
+  color: var(--grayish-blue);
+  font-size: 3vw;
+  margin: 3% 7%;
+}
+
+.form span {
+  color: var(--red);
+  font-weight: bold;
+}
+
+.attribution {
+  font-size: 8px;
+  left: 15%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1100px) {
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10%;
+  }
+
+  .apply {
+    margin: 0;
+    width: 50%;
+  }
+
+  .intro {
+    width: 50%;
+  }
+
+  .intro h1 {
+    font-size: 3vw;
+    text-align: left;
+    width: 80%;
+  }
+
+  .intro p {
+    font-size: 1vw;
+    padding-right: 5%;
+    text-align: left;
+    width: 100%;
+  }
+
+  .offer {
+    width: 100%;
+  }
+
+  .offer h4 {
+    font-size: 1vw;
+    margin: 2%;
+  }
+
+  .apply {
+    width: 50%;
+  }
+
+  form {
+    margin-top: 5%;
+  }
+
+  .form-control input {
+    font-size: 1vw;
+    width: 100%;
+  }
+
+  .form-control small {
+    bottom: -35%;
+    font-size: 1vw;
+    right: 0;
+  }
+
+  .form-button {
+    font-size: 1vw;
+    padding: 5%;
+    width: 100%;
+  }
+
+  .form p {
+    font-size: 0.7vw;
+  }
+
+  .attribution {
+    left: 0;
+    top: 0;
+  }
+}

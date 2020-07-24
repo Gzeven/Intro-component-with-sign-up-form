@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="intro">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="apply">
+        <div class="offer">
+          <h4>Try it free 7 days <span> then $20/mo. thereafter</span></h4>
+        </div>
+
+        <form id="form" class="form">
+          <div class="form-control">
+            <input
+              type="text"
+              id="firstname"
+              placeholder="First Name"
+              aria-label="Enter First Name"
+            />
+            <small>Error message</small>
+            <small class="error-icon"
+              ><img src="/images/icon-error.svg" alt=""
+            /></small>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              id="lastname"
+              placeholder="Last Name"
+              aria-label="Enter Last Name"
+            />
+            <small>Error message</small>
+            <small class="error-icon"
+              ><img src="/images/icon-error.svg" alt=""
+            /></small>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              id="email"
+              placeholder="Email Address"
+              aria-label="Enter Email Address"
+            />
+            <small>Error message</small>
+            <small class="error-icon"
+              ><img src="/images/icon-error.svg" alt=""
+            /></small>
+          </div>
+          <div class="form-control">
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              aria-label="Enter Password"
+            />
+            <small>Error message</small>
+            <small class="error-icon"
+              ><img src="/images/icon-error.svg" alt=""
+            /></small>
+          </div>
+          <button class="form-button">Claim your free trial</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Gerben van de Weerdhof</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
